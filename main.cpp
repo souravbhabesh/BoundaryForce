@@ -42,7 +42,7 @@ int main(int argc, char **argv)
        print_and_exit("Usage: %s NX NY KAPPA STEPS\n");
    }
  
-  sprintf(validrunfile,"../Sim_dump_ribbon/L%d/W%d/k%.1f/validruns.log",NX,NY,KAPPA);
+  sprintf(validrunfile,"../Sim_dump_ribbon/L%d/W%d/k%.1f/valid_thermal_runs.log",NX,NY,KAPPA);
   sprintf(numvalidrun_file,"../Sim_dump_ribbon/L%d/W%d/k%.1f/numvalidruns.log",NX,NY,KAPPA);
 
   if(NULL==(vf=fopen(validrunfile,"r")))

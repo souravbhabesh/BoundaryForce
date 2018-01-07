@@ -7,7 +7,7 @@ CXXFLAGS = -Wall -c $(DEBUG) -std=c++11
 LFLAGS = $(DEBUG) -O2 -Wall 
 
 FORCE : $(OBJS)
-	$(CXX) -o FORCE $(OBJS) $(LFLAGS)
+	$(CXX) -o FORCETEST $(OBJS) $(LFLAGS)
 
 gsd.o : $(DEPS) gsd.h  gsd_fn.cpp
 	$(CXX) $(CXXFLAGS) gsd_fn.cpp
@@ -22,5 +22,5 @@ main.o : $(DEPS) gsd.h gsd_read.h force.h main.cpp
 	$(CXX) $(CXXFLAGS) main.cpp
 
 clean:
-	\rm *.o *~ FORCE
+	\rm *.o *~ FORCETEST
 

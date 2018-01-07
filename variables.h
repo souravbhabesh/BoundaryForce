@@ -17,16 +17,19 @@ extern int NX,NY,RUNS,STEPS,LEN,FRAMES,JK_BIN_COUNT;
 extern double KAPPA,EPSILON;
 
 //Jack Knife blocking variables
+/*
 extern double Xi[NXMAX][MAXRUN];
 extern double Yi[NXMAX][MAXRUN];
 extern double Zi[NXMAX][MAXRUN];
 extern double Xj[NXMAX][MAXBONDS][MAXRUN];
 extern double Yj[NXMAX][MAXBONDS][MAXRUN];
 extern double Zj[NXMAX][MAXBONDS][MAXRUN];
+*/
 
 // Ribbon Boundary Inplane Stretching Forces
 extern double Fx[NXMAX][MAXRUN];
 extern double Fy[NXMAX][MAXRUN];
+extern int neighbor_node[NXMAX][6];
 
 
 
